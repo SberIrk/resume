@@ -7,20 +7,92 @@
     <title>Резюме</title>
     <meta name="description" content="Резюме">
     <meta name='keywords' content="Это сайт - резюме Клопова Дмитрия Дмитриевича">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <img src="./imgs/photo1.jpeg" alt="Photo" width="250">
-    <h1>Клопов Дмитрий Дмитриевич</h1>
-    <p>
-       Хочу научиться <strong>фронтенду</strong> и приобрести навыкы работы с интерфейсом браузера для удобного приложения или сайта. 
-    </p>
-    <p>
-        Моя задача выучить <em>HTML, JS, CSS</em>.
-    </p>
+    <div class="content">
+       
+        <div class="info">
+            <img src="./imgs/photo1.jpeg" alt="Photo" width="250">
+            <div class="info-group">
+                <h1>Клопов Дмитрий Дмитриевич</h1>
+                <p>
+                Хочу научиться <strong>фронтенду</strong> и приобрести навыки работы с интерфейсом браузера для удобного приложения или сайта. 
+                </p>
+                <p>
+                    Моя задача выучить <em>HTML, JS, CSS</em>.
+                </p>
+        
+                    <h4>Список cоц.cетей: </h4>
+                <p class="p_link">
+                    <a href="https://t.me/SberIrk" target="_blank">Телеграм</a> |
+                    <a href="https://wa.me/79148990195" target="_blank">WhatsApp</a> | 
+                    <a href="#">WhatsApp</a>
+                </p>
+            </div>
+        </div>    
+        <div class="hobby">
+            <H4> Мои хобби:</H4>
+            <ol>
+                <li>Программирование</li>
+                <li>Футбол</li>
+            </ol>
+        </div>
+        <div class="works">
+            <h4>Опыт работы</h4>
+            <table>
+                <thead>
+                    <th>Место работы</th>
+                    <th>Должность</th>
+                    <th>Период работы</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Билайн</td>
+                        <td>Монтажник</td>
+                        <td>01.01.2011 - 01.01.2013</td>
+                    </tr>
+                    <tr>
+                        <td>МТС</td>
+                        <td>Инженер</td>
+                        <td>01.01.2013 - 01.01.2021</td>
+                    </tr>
+                    <tr>
+                        <td>WorldClass</td>
+                        <td>Программист</td>
+                        <td>01.01.2021 - ...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="progList">
+            <h4>Языки программирвоания:</h4>
+            <ul>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Mysql</li>
+            </ul>
+        </div>
 
-    <body>Список Соц.Сети: </body>h4>
-        <a href="https://t.me/SberIrk" target="_blank">Телеграм</a> |
-        <a href="https://wa.me/79148990195" target="_blank">WhatsApp</a>
-    
+        <div>
+            <form>
+                <h4>Связаться со мной</h4>
+                <div class="row-flex">
+                    <label class="label" for="Name">Ваше имя:
+                        <input id="Name" type="text" placeholder="Введите имя">
+                    </label>
+                    <label class="label" for="email">Ваш email:
+                        <input id="email" type="text" placeholder="Введите email">
+                    </label>
+                </div>
+                <label for="Comment" class="areacomment">Ваша сообщение:
+                    <textarea id="Comment" rows="4" cols="50" placeholder="Ваше сообщение..."></textarea>                  
+                </label>
+                    <div>
+                    <button type="submit"> Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
